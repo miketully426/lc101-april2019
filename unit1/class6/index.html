@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../../css/slidestyles.css" type="text/css" media="screen" charset="utf-8">
+
+    <!-- #ToDo: Change Title for the presentation -->
+    <title>Unit 1: Fundamentals of Programming</title>
+
+</head>
+
+<!-- #ToDo: Change 16:9 to 4:3 or vice versa, according to the current projector / screen -->
+
+<body
+    onload="var slideshow = remark.create({ratio: '16:9', navigation: {scroll: true, touch: true, click: false}, countIncrementalSlides: false, highlightLanguage: 'bash', highlightStyle: 'tomorrow-night-blue'});">
+
+    <!-- #ToDo: Write your slides in MarkDown here -->
+    <textarea id="source">
+
+class: center, middle
+
+# Unit 1
+## Fundamentals of Programming
+
+---
+
+class: center, middle
+
+# [Studio Solution](https://runestone.launchcode.org/runestone/static/thinkcspy/Studios/sherlock.html)
+
+---
+class: center, middle
+
+# Chapter 8 Lecture
+
+---
+
+### Topics
+
+- While Loops
+- Break and Continue
+- 2-D Tables
+---
+
+### While Loops
+
+- What makes them different from for-loops?
+
+- When should you use a while loop over a for-loop?
+-- Commonly used waiting for valid user input
+
+- What happens if you don't program a way to meet the exit condition?
+
+---
+### Break and Continue
+
+- What does Break do?
+- What does Continue do?
+
+---
+### 2-D Tables
+
+- What's an example of a 1-dimensional table?
+
+---
+
+### 2-D Tables
+<div class="row">
+    <div class="column">
+	<p>2-D Tables have columns and rows
+        <ul>
+        <li>Use coordinates to determine location</li>
+        <li>Coordinates determined by row and column index</li>
+        </ul>
+        </div>
+        <div class = "column">
+            <img src="../images/2d-table.png">
+    </div>
+    </div>
+
+---
+### 2-D Tables
+<div class="row">
+    <div class="column">
+	<p>Nested For Loops</p>
+        <ul>
+        <li>For Loop within a For Loop</li>
+        <li>Great for traversing 2-D Tables</li>
+        </ul>
+		<div style="background: black;">
+		<div>for row in range(3):</div>
+		<div style="text-indent: 10px">	for column in range(3):</div>
+		<div style="text-indent: 20px">		print(row, column)
+				</div>
+        </div></div>
+        <div class = "column">
+            <img src="../images/2d-table.png">
+    </div>
+    </div>
+
+
+---
+### Chapter 8 Exercises
+
+- [Chapter 8](https://runestone.launchcode.org/runestone/static/thinkcspy/Exceptions/Exercises.html)
+    - 9
+	- If given the table below with high temps for each day in a three week span, create a function that can print out the average temp for each week.
+	- table = [[56, 58, 53, 45, 56, 63, 59],
+        [54, 63, 64, 68, 64, 63, 70],
+        [73, 68, 65, 73, 67, 65, 74]]
+---
+
+class: center, middle
+
+# Q&A
+
+---
+
+class: center, middle
+
+## Blurring Walkthrough
+
+---
+
+### Pair Programming
+<div class="row">
+    <div class="column">
+	<p>What is Pair Programming
+        <ul>
+        <li>2 Developers, 1 Workstation</li>
+        <li>Both working on the same code</li>
+        </ul>
+        </div>
+        <div class = "column">
+            <img src="../images/pair-programming.jpg">
+    </div>
+    </div>
+
+---
+### Pair Programming
+<div class="row">
+    <div class="column">
+	<p>How does Pair Programming work?
+        <ul>
+        <li>Driver and Navigator</li>
+        <li>Driver writes the code, Navigator checks it</li>
+		<li>Tester and Solver</li>
+        </ul>
+        </div>
+        <div class = "column">
+            <img src="../images/pair-programming.jpg">
+    </div>
+    </div>
+
+---
+### Pair Programming
+<div class="row">
+    <div class="column">
+	<p>Why Pair Programming?
+        <ul>
+        <li>Creates better code</li>
+        <li>Allows junior developers to learn directly from experienced developers</li>
+		<li>Prevents knowledge siloing</li>
+		<li>More secure</li>
+		<li>More fun than working alone all day</li>
+        </ul>
+        </div>
+        <div class = "column">
+            <img src="../images/pair-programming.jpg">
+    </div>
+    </div>
+
+---
+class: center, middle
+
+# [Survey]
+## then
+# [Find your TA]
+
+
+
+</textarea>
+    <script type="text/javascript" src="../../js/remark-latest.min.js"></script>
+</body>
+
+</html>
