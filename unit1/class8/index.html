@@ -1,0 +1,156 @@
+<!DOCTYPE html><html lang=en><head><meta http-equiv=Content-Type content="text/html; charset=UTF-8"><meta name=viewport content="width=device-width,initial-scale=1"><link rel="stylesheet" href="../../css/slidestyles.css" type="text/css" media="screen" charset="utf-8">
+
+<!-- #ToDo: Change Title for the presentation -->
+<title>Unit 1: Fundamentals of Programming</title>
+
+</head>
+
+<!-- #ToDo: Change 16:9 to 4:3 or vice versa, according to the current projector / screen -->
+<body onload="var slideshow = remark.create({ratio: '16:9', navigation: {scroll: true, touch: true, click: false}, countIncrementalSlides: false, highlightLanguage: 'bash', highlightStyle: 'tomorrow-night-blue'});">
+
+<!-- #ToDo: Write your slides in MarkDown here -->
+<textarea id="source">
+
+class: center, middle
+
+# Unit 1
+## Fundamentals of Programming
+
+---
+
+### General Announcements
+- Our first large assignment is due Thursday Dec 13.
+- You have most of the tools to start Crypto. So start!
+- Starting over: when should you consider throwing your answer away?
+---
+
+class: center, middle
+
+# [Studio Solution](https://runestone.launchcode.org/runestone/static/thinkcspy/Studios/sorted.html)
+
+---
+
+class: center, middle
+
+# Chapter 10 Lecture
+## Lists
+
+---
+
+### Topics
+
+- Methods
+- Concatenation and Append
+- Referencing
+- Aliasing versus Cloning
+- List Comprehensions
+
+---
+
+### Methods
+- [Documentation](https://docs.python.org/3/tutorial/datastructures.html)
+- We will see some examples later
+
+---
+
+### Concatenation and Append
+- What's the difference between them on lists?
+
+---
+
+### Concatenation and Append
+- Concatenation: Combines two lists into one NEW list
+- .append() adds the parameter list to the list the method is called on.
+
+```
+#input
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+list1.append(list2)
+
+#output
+list1 = [1, 2, 3, 4, 5, 6]
+```
+---
+
+### Referencing
+
+- Lists are actually made up of references to other objects
+- This causes us to have different ideas of equality: `==` and `is`
+- How are these equalities different?
+
+```
+a = [1,2,3]
+b = [1,2,3]
+c = a
+
+print(a == b)
+print(a is b)
+print(a is c)
+```
+- What is the output?
+
+---
+
+<img alt="List references" src="../images/lists1.png" />
+
+---
+
+### Aliasing versus Cloning
+- Aliasing creates a reference to the same list
+- Cloning creates a copy of the list
+
+```
+a = [1,2,3]
+b = a[:]
+c = a
+
+print(a is b)
+print(a is c)
+```
+- What us the output?
+
+---
+
+<img alt="List references" src="../images/lists1.png" />
+
+---
+ 
+### List Comprehensions
+- new_list = [< expression > for < item > in < list > < optional condition >]
+- Given a list of numbers, make a new list of each odd numbers square.
+- Example:
+    - List given: `[1,2,3,4,5]`
+    - List created: `[1,9,25]`
+
+---
+
+### Chapter 10 Exercises
+
+- [Chapter 10](https://runestone.launchcode.org/runestone/static/thinkcspy/Lists/Exercises.html)
+    - 6
+    - 10
+    - 11
+
+---
+
+class: center, middle
+
+# Q&A
+
+---
+
+class: center, middle
+
+## Studio Walkthrough
+### [Bugz](https://runestone.launchcode.org/runestone/static/thinkcspy/Studios/bugz.html)
+
+---
+class: center, middle
+
+# [Survey]
+## then
+# [Find your TA]
+
+
+</textarea><script type="text/javascript" src="../../js/remark-latest.min.js"></script></body></html>
