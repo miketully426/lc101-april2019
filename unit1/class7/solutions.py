@@ -13,11 +13,7 @@ def reverse(text):
 #############################
 
 def is_palindrome(text):
-    half = len(text)/2
-    if len(text) < 2:
-        return True
-    else:
-        return text[:int(half)] == reverse(text[-int(half):])
+    return reverse(text) == text
 
 #############################
 ### Chapter 9: Exercise 7 ###
