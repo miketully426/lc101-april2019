@@ -37,5 +37,5 @@ Lesson slides for LaunchCode's 2019 LC101 Class (Center for Workforce Innovation
 	- [Slides](https://miketully426.github.io/lc101-april2019/unit1/class9)
 
 - ### Class 10
-- [Slides](https://miketully426.github.io/lc101-april2019/unit1/class10)
-- [Solutions](https://miketully426.github.io/lc101-april2019/unit1/class10/solutions.py)
+	- [Slides](https://miketully426.github.io/lc101-april2019/unit1/class10)
+	- [Solutions](https://miketully426.github.io/lc101-april2019/unit1/class10/solutions.py)
