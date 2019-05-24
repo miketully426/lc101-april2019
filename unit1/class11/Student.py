@@ -1,14 +1,19 @@
-class Student:
+class Person:
 
-    def __init__(self, student_id, first_name, last_name, birthdate):
-       self.student_id = student_id
-       self.first_name = first_name
-       self.last_name = last_name
-       self.birthdate = birthdate
-       self.grades = {}
+    def __init__(self, first_name, last_name, birthdate):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.birthdate = birthdate
 
     def get_first_name(self):
         return self.first_name
+
+class Student(Person):
+
+    def __init__(self, student_id, first_name, last_name, birthdate):
+        Person.__init__(self, first_name, last_name, birthdate)
+        self.student_id = student_id
+        self.grades = {}
 
     def add_grade(self, course, grade):
         self.grades[course] = grade
